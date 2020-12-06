@@ -21,9 +21,13 @@
 
 
     <script>
-        let p1 = document.getElementsByTagName('p')[0]
+        let corpo = document.body
+        let p1 = document.getElementsByTagName('p')[1]
         document.write('esta escrito assim:' +
             p1.innerText)
+        corpo.style.background = 'blue'
+        p1.style.color = 'red'
+        alert(p1.innerHTML)
     </script>
 
 </body>
