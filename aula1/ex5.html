@@ -12,7 +12,7 @@
     <h1> Aprendendo dom</h1>
     <p>aqui vai o resultado</p>
     <p>Aprendedo a usa <strong>Dom</strong></p>
-    <div>
+    <div id="msg">
         Clique em mim
     </div>
 
@@ -24,10 +24,15 @@
         let corpo = document.body
         let p1 = document.getElementsByTagName('p')[1]
         document.write('esta escrito assim:' +
-            p1.innerText)
-        corpo.style.background = 'blue'
-        p1.style.color = 'red'
-        alert(p1.innerHTML)
+                p1.innerText)
+            /*
+                    let d = document.getElementById('msg')
+                    corpo.style.background = 'blue'
+                    p1.style.color = 'red'
+                    d.style.background = 'pink'
+                    d.innerText = 'Estou aguardando...'
+    */
+            //pode usar tambem por classe enome
     </script>
 
 </body>
