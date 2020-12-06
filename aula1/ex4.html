@@ -19,6 +19,11 @@
         document.write(`${nome} tem ${nome.length} letras `) //mostra na tela
         document.writeln(`seu nome em maisculas ${nome.toUpperCase()}`)
         document.writeln(`seu nome em minusculas ${nome.toLocaleLowerCase()}`)
+        let n = 150.50
+        n.toLocaleString('pt-br', {
+                style: 'currency',
+                currency: 'BRL'
+            }) // conversao localizaçaop
     </script>
 </body>
 
