@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div id=area ondblclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area">
         interagir
 
     </div>
@@ -19,23 +19,26 @@
 
 
     <script>
+        let a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+
         function clicar() {
-            let area = document.getElementById('area')
-            area.innerText = 'clicou'
-            area.style.background = 'purple'
+            a.innerText = 'clicou'
+            a.style.background = 'purple '
         }
 
         function entrar() {
-            let area = document.getElementById('area')
-            area.innerText = 'entrou'
-            area.style.backgroundColor = 'pink'
+            a.innerText = 'entrou'
+            a.style.backgroundColor = 'pink'
 
         }
 
         function sair() {
-            let area = document.getElementById('area')
-            area.innerText = 'saiu'
-            area.style.background = 'red'
+            a.innerText = 'saiu'
+            a.style.background = 'red'
 
         }
     </script>
