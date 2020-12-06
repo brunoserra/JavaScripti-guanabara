@@ -7,3 +7,13 @@ body {
 h1 {
     color: lightsalmon;
 }
+
+div#area {
+    font: normal 25pt Arial;
+    background-color: rgb(84, 106, 226);
+    color: black;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}

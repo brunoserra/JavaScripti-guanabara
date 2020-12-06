@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+    <title>Eventosdom</title>
+</head>
+
+<body>
+    <div id=area ondblclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interagir
+
+    </div>
+
+
+
+
+
+    <script>
+        function clicar() {
+            let area = document.getElementById('area')
+            area.innerText = 'clicou'
+            area.style.background = 'purple'
+        }
+
+        function entrar() {
+            let area = document.getElementById('area')
+            area.innerText = 'entrou'
+            area.style.backgroundColor = 'pink'
+
+        }
+
+        function sair() {
+            let area = document.getElementById('area')
+            area.innerText = 'saiu'
+            area.style.background = 'red'
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>
