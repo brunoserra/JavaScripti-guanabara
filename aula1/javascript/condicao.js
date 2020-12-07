@@ -1,3 +1,8 @@
-let vel = 60.5
+let vel = 60
 console.log(`a velocidade do carro é ${vel}km/h`)
-console.log(' dirija com segurança')
+if (vel > 60) {
+    console.log(' você foi multado')
+
+} else {
+    console.log('siga sem multa')
+}

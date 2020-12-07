@@ -5,12 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/estilo.css">
-    <title>condições parte1</title>
+    <title>condição</title>
 </head>
 
 <body>
 
+    <h1>Sistemas de Mulas</h1>
+    Velocidade Carro: <input type="number" name="txtvel" id="txtvel"> km/h <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
 
+    </div>
+
+
+    <script>
+        function calcular() {
+            let v = document.getElementById('txtvel')
+            let res = document.querySelector('div#res')
+            let vel = Number(v.value)
+            res.innerHTML = `sua velocidade é ${vel}`
+            if (vel > 60) {
+                res.innerHTML += '<p>Multado</p>'
+            } else {
+                res.innerHTML += '<p>dirija com segurança</p>'
+
+            }
+
+
+        }
+    </script>
 
 </body>
 
