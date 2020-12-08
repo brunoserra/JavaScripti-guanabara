@@ -1,6 +1,8 @@
-let idade = 18
-if (idade < 18) {
+let idade = 16
+if (idade < 16) {
     console.log('não vota')
 } else {
-    console.log('vota')
+    if (idade >= 16 && idade < 18) {
+        console.log('voto não obrigatorio')
+    }
 }
