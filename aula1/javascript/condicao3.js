@@ -1,4 +1,6 @@
- let hora = 1
+ //pegar horas do terminal
+ let atual = new Date()
+ let hora = atual.getHours()
  console.log(`agora são ${hora}`)
  if (hora >= 8 && hora < 12) {
      console.log('bom dia')
