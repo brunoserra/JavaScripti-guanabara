@@ -8,6 +8,35 @@ function verificar() {
     } else {
         let fsex = document.getElementsByName('radsex')
         let idade = ano - Number(fAno.value)
-        res.innerHTML = `Deu certo ${idade}`
+        let genero = ''
+        let img = document.createElement('img')
+        img.setAttribute('id', 'foto')
+
+        if (fsex[0].checked) {
+            genero = 'Homem'
+            if (idade >= 0 && idade < 10) {
+                //crianaça
+            } else if (idade < 21) {
+                // jovem
+            } else if (idade < 50) {
+                // adulto
+            } else {
+                //idoso
+            }
+
+        } else {
+            genero = 'mulher'
+            if (idade >= 0 && idade < 10) {
+                //crianaça
+            } else if (idade < 21) {
+                // jovem
+            } else if (idade < 50) {
+                // adulto
+            } else {
+                //idoso
+            }
+        }
+        res.innerHTML = `é ${genero} com ${idade} anos`
     }
+
 }
