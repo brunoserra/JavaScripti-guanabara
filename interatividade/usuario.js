@@ -9,13 +9,14 @@ function verificar() {
         let fsex = document.getElementsByName('radsex')
         let idade = ano - Number(fAno.value)
         let genero = ''
-        let img = document.createElement('img')
-        img.setAttribute('id', 'foto')
+        let imagens = document.createElement('img')
+        imagens.setAttribute('id', 'foto')
 
         if (fsex[0].checked) {
             genero = 'Homem'
             if (idade >= 0 && idade < 10) {
-                //crianaça
+                imagens.setAttribute('src', 'imagens/noite.png')
+                    //crianaça
             } else if (idade < 21) {
                 // jovem
             } else if (idade < 50) {
@@ -37,6 +38,7 @@ function verificar() {
             }
         }
         res.innerHTML = `é ${genero} com ${idade} anos`
+        res.appendChild('img')
     }
 
 }
