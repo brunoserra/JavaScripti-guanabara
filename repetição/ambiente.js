@@ -6,7 +6,5 @@ while (c <= 6) {
 var c = 1
 do {
     console.log(`passos ${c}`)
-
-} while (c <= 6) {
-
-}
+     c++
+} while (c <= 6) 
