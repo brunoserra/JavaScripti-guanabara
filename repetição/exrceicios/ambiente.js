@@ -10,13 +10,20 @@ function contar() {
         let i = Number(inicio.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
+        if (p <= 0) {
+            alert('passo invalido')
+            p = 1
+        }
+
         if (i < f) {
+            //contegem progressiva
             for (let c = i; c <= f; c += p) {
                 res.innerHTML += `${c} \u{1F422} `
             }
 
 
         } else {
+            //contagem regresiva
             for (let c = i; c >= f; c -= p) {
                 res.innerHTML += `${c} \u{1F422} `
             }
