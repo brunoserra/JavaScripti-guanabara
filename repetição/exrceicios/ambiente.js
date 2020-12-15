@@ -14,9 +14,13 @@ function contar() {
             for (let c = i; c <= f; c += p) {
                 res.innerHTML += `${c} \u{1F422} `
             }
+
+
+        } else {
+            for (let c = i; c >= f; c -= p) {
+                res.innerHTML += `${c} \u{1F422} `
+            }
         }
-
-        res.innerHTML += `\u{1F3B8}`
     }
-
+    res.innerHTML += `\u{1F3B8}`
 }
