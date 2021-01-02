@@ -27,3 +27,7 @@
         text-align: center;
         padding: 10px;
     }
+    
+    select {
+        width: 200px;
+    }
