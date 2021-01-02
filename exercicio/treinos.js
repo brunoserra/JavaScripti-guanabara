@@ -1,18 +1,18 @@
 let num = document.querySelector('input#fnum')
 let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
-let vtores = []
+let valores = []
 
 function isNumero(n) {
-    if (Numer(n) >= 1 && Numer(n) <= 100) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
         return false
     }
 }
 
-function inLista(n, 1) {
-    if (L.indexOf(Numer(n)) != -1) {
+function inLista(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
         return true
     } else {
         return false
